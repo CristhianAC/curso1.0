@@ -1,0 +1,6 @@
+@for (item of (characters | async)?.items; track item.id) {
+
+    <img [src]="item.image" alt="item.name" />
+    <p>{{ item.name }}</p>
+    
+}
